@@ -20,16 +20,16 @@ public class Lesson4 {
         for (int people = 2; people <= 6; people++) {
             int perPerson = totalPrice / people;
             int remainder = totalPrice % people;
-            if (remainder==0){
-            System.out.println(people + "人:1人あたり" + perPerson + "円、余り" + remainder + "円(ぴったり)");
+            String note = "";
+            if (remainder == 0) {
+                note = "(ぴったり)";
             }
-            else {
-                System.out.println(people + "人:1人あたり" + perPerson + "円、余り" + remainder + "円");
-            }
-
+            System.out.println(people + "人:1人あたり" + perPerson + "円、余り" + remainder + "円" + note);
         }
-        System.out.println("foe文の３つの部分の役割について。;によって役割を区切ることができる。");
-        System.out.println("変数;変数がどれくらいになるまで処理するか;変数の変化ルール;の役割。");
-        System.out.println("その下にfor文で定めたルール内に繰り返してほしいコードを書く。ってかんじ");
+
+        //foe文の３つの部分の役割について。;によって役割を区切ることができる。
+        //変数;変数がどれくらいになるまで処理するか;変数の変化ルール;の役割。
+        //その下にfor文で定めたルール内に繰り返してほしいコードを書く。ってかんじ
+        //""は空でも問題ない
     }
 }
